@@ -20,7 +20,8 @@ public class SelectionSort {
                 if (a[j] < a[min_index]) {
                     min_index = j;
                 }
-
+            }
+            if(min_index!=i) {
                 int temp = a[min_index];
                 a[min_index] = a[i];
                 a[i] = temp;
