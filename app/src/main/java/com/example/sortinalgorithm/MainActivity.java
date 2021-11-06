@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         quickSorting.StartSorting();
 
         SelectionSort selectionSort = new SelectionSort();
-        selectionSort.StartSelectionSort();
+//        selectionSort.StartSelectionSort();
+
+        BubbleSort bubbleSort = new BubbleSort();
     }
 }
