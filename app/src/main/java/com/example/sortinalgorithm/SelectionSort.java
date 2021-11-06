@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class SelectionSort {
 
-    int a[] = {7, 4, 56, 9, 5, 1, 32, 66};
+    int a[] = {7, 4, 56, 9, 5, 1, 32, 66,8};
 
     public void StartSelectionSort() {
 
