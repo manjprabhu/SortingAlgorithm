@@ -9,11 +9,9 @@ public class QuickSorting {
     int pivot;
 
     public void StartSorting() {
-
         QuickSort(low,high);
         for(int i=0;i<a.length;i++) {
             Log.v("QuickSort:","Sorted element:"+a[i]);
-
         }
     }
 
