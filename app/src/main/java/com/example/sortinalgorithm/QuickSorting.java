@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class QuickSorting {
 
-    int a[] = {7, 4, 56, 9, 5,  1, 32, 66};
+    int a[] = {17, 4, 6, 9, 5,  1, 32, 66,8,2};
     int low = 0, high = a.length-1;
     int pivot;
 
@@ -18,13 +18,11 @@ public class QuickSorting {
     }
 
     private void  QuickSort(int low, int high) {
-
         if (low < high) {
             int pos = partition(low, high);
              QuickSort(low, pos-1);
              QuickSort(pos+1, high);
         }
-
     }
 
     private int partition(int low, int high) {
@@ -32,13 +30,13 @@ public class QuickSorting {
         pivot = a[low];
         while (i < j) {
 
-            do {
+            while(a[i] < pivot) {
                 i++;
-            } while (a[i] < pivot);
+            }
 
-            do {
+            while (a[j] > pivot) {
                 j--;
-            } while (a[j] > pivot);
+            }
 
             if (i < j) {
                 int temp = a[i];
@@ -47,7 +45,7 @@ public class QuickSorting {
             }
         }
         int temp = pivot;
-       pivot = a[j];
+        pivot = a[j];
         a[j] = temp;
         return j;
     }
